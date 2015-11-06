@@ -16,7 +16,11 @@ using namespace std;
 
 polymer::polymer()
 {
+<<<<<<< HEAD
     N = 20;
+=======
+    N = 10;
+>>>>>>> dd7bdd9539453bfd13460934982e355711d37718
     M = new molecule [N];
 //    molecule m2[N];
 //    M = m1 ;//ctor
@@ -25,13 +29,17 @@ polymer::polymer()
     pol_id++;
     id = pol_id;
     cout << "\ninit polymer ..." << endl;
+<<<<<<< HEAD
 
 //  set polymer coordinates to zero
     xc=yc=zc=0;
+=======
+>>>>>>> dd7bdd9539453bfd13460934982e355711d37718
     for (int i = 0; i < N; i++){
 //        M[i] = molecule();
         M[i].q=-1.0;
         M[i].type=1;
+<<<<<<< HEAD
         //center of mass initialization
         xc+=M[i].x; yc+=M[i].y ; zc+=M[i].z;
         }
@@ -68,6 +76,25 @@ polymer::polymer(int Nset /*double q , other parameters can be included to set u
 
 
 // function to create polymer by random walk... to be done. DONE!
+=======
+
+        }
+
+    //polymer id? we need it
+}
+
+void polymer::set_polymer(int Nset)
+{
+    N = Nset;
+    molecule m1[N];
+    M = m1 ;//ctor
+    // delta is the spring length
+    delta = 1.0;
+    k = 20.;
+
+}
+
+>>>>>>> dd7bdd9539453bfd13460934982e355711d37718
 void polymer::polymer_RW( /* int Nset  = 10 , */ double r /* = 0.0 */)
 {
 
@@ -93,6 +120,7 @@ void polymer::polymer_RW( /* int Nset  = 10 , */ double r /* = 0.0 */)
 
 }
 
+<<<<<<< HEAD
 void polymer::update_COM()
 {
     xc = yc = zc = 0.;
@@ -109,6 +137,9 @@ void polymer::update_COM()
 //}
 
 
+=======
+// function to create polymer by random walk... to be done
+>>>>>>> dd7bdd9539453bfd13460934982e355711d37718
 
 // implement here polymer move functions...
 
@@ -118,13 +149,19 @@ double polymer::bond_energy()
     for (int i = 0; i< N-1;i++){
         molecule mi   = M[i];
         molecule next = M[i+1];
+<<<<<<< HEAD
         double d      = Distance(mi,next);
         en           += k*(d-delta)*(d-delta)*0.5;
+=======
+        double d = Distance(mi,next);
+        en           += k*(d-delta)*(d-delta);
+>>>>>>> dd7bdd9539453bfd13460934982e355711d37718
     }
     //dtor
     return en;
 }
 
+<<<<<<< HEAD
 // We can accelerate energy calculations by calculating
 // energy of two springs that are connected with molecule #j which belongs to 0 ... N-1
 
@@ -163,6 +200,11 @@ double polymer::bond_energy(int j)
 void polymer::print(){
 
     cout << "\n Print polymer ID " << id << " ; COM : x = " << xc << " y = " << yc << " z = " << zc << endl;
+=======
+void polymer::print(){
+
+    cout << "\n Print polymer ID " << id << endl;
+>>>>>>> dd7bdd9539453bfd13460934982e355711d37718
     cout << " N = " << N << " ;  "<< endl;
     for (int i = 0; i < N; ++i)
     {

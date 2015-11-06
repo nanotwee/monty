@@ -105,6 +105,7 @@ double sim_system::recalc_energy_mol(int i)
     return e;
 }
 
+<<<<<<< HEAD
 // here one can include different energies to penalise some system moves
 // e.g. harmonic potentials on some molecules
 double sim_system::extra_energy_pol()
@@ -124,6 +125,8 @@ double sim_system::extra_energy_pol()
     return e;
 }
 
+=======
+>>>>>>> dd7bdd9539453bfd13460934982e355711d37718
 // energy for a polymer bead move
 double sim_system::recalc_energy_pol(int pol_i, int mol_i)
 {
@@ -148,12 +151,25 @@ double sim_system::recalc_energy_pol(int pol_i, int mol_i)
 
     // go through bonded ... to be done
 
+<<<<<<< HEAD
     e += poly[pol_i].bond_energy(mol_i);
 
     // we can add some extra energies if necessary, e.g.
     e += sim_system::extra_energy_pol();
 
 
+=======
+    e += poly[pol_i].bond_energy();
+
+    molecule m = poly[0].M[0];
+    e += 100.0*(m.x)*(m.x)+(m.y)*(m.y)+(m.z+10.0)*(m.z+10);
+    m = poly[1].M[0];
+    e += 100.0*(m.x)*(m.x)+(m.y)*(m.y)+(m.z-10.0)*(m.z-10);
+    m = poly[2].M[0];
+    e += 100.0*(m.x-10.)*(m.x-10.)+(m.y)*(m.y)+(m.z)*(m.z);
+    m = poly[3].M[0];
+    e += 100.0*(m.x+10.)*(m.x+10.)+(m.y)*(m.y)+(m.z)*(m.z);
+>>>>>>> dd7bdd9539453bfd13460934982e355711d37718
 //    for (int i = 0; i < N_polymers; i++){
 //        molecule m = poly[i].M[0];
 //        e += 100.0*(m.x)*(m.x)+(m.y)*(m.y)+(m.z)*(m.z);

@@ -1,5 +1,9 @@
 # depslib dependency file v1.0
+<<<<<<< HEAD
 1446760293 source:/home/salim/MEGA/current_projects/confined charged polymer MC/code/main.cpp
+=======
+1446548817 source:/home/salim/MEGA/current_projects/confined charged polymer MC/code/main.cpp
+>>>>>>> dd7bdd9539453bfd13460934982e355711d37718
 	<vector>
 	<cstdlib>
 	<iomanip>
@@ -53,7 +57,11 @@
 	<iostream>
 	<fstream>
 
+<<<<<<< HEAD
 1446760384 source:/home/salim/MEGA/current_projects/confined charged polymer MC/code/src/polymer.cpp
+=======
+1446464089 source:/home/salim/MEGA/current_projects/confined charged polymer MC/code/src/polymer.cpp
+>>>>>>> dd7bdd9539453bfd13460934982e355711d37718
 	"../include/polymer.h"
 	"../molecule.h"
 	"../include/integrate.h"
@@ -66,7 +74,11 @@
 	<cmath>
 	<fstream>
 
+<<<<<<< HEAD
 1446759194 /home/salim/MEGA/current_projects/confined charged polymer MC/code/include/polymer.h
+=======
+1446463529 /home/salim/MEGA/current_projects/confined charged polymer MC/code/include/polymer.h
+>>>>>>> dd7bdd9539453bfd13460934982e355711d37718
 	"../molecule.h"
 	"../global.h"
 
@@ -107,7 +119,11 @@
 	<stdio.h>
 	<stdlib.h>
 
+<<<<<<< HEAD
 1446760209 /home/salim/MEGA/current_projects/confined charged polymer MC/code/include/sim_system.h
+=======
+1446458967 /home/salim/MEGA/current_projects/confined charged polymer MC/code/include/sim_system.h
+>>>>>>> dd7bdd9539453bfd13460934982e355711d37718
 	"../molecule.h"
 	"polymer.h"
 
@@ -116,7 +132,11 @@
 	"../global.h"
 	"polymer.h"
 
+<<<<<<< HEAD
 1446761856 source:/home/salim/MEGA/current_projects/confined charged polymer MC/code/src/sim_system.cpp
+=======
+1446554031 source:/home/salim/MEGA/current_projects/confined charged polymer MC/code/src/sim_system.cpp
+>>>>>>> dd7bdd9539453bfd13460934982e355711d37718
 	"../include/sim_system.h"
 	"../global.h"
 	"../molecule.h"
