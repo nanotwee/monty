@@ -52,7 +52,7 @@ const double lambda=10.0;
 double k=2.0;
 
 
-
+// Number of ions and polymer chains
 int N_molecules = 200;
 int N_polymers  = 10;
 int mol_id      = 0;
