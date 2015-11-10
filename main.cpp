@@ -52,15 +52,9 @@ const double lambda=10.0;
 double k=2.0;
 
 
-<<<<<<< HEAD
 
 int N_molecules = 200;
 int N_polymers  = 4;
-=======
-// Number of ions and polymer chains
-int N_molecules = 200;
-int N_polymers  = 10;
->>>>>>> dd7bdd9539453bfd13460934982e355711d37718
 int mol_id      = 0;
 int pol_id      = 0;
 int main(int argc, char* argv[]) {
@@ -136,11 +130,7 @@ int main(int argc, char* argv[]) {
         cout << i << endl;
        poly[i].polymer_RW(2.0);
         cout << "from system print" << endl;
-<<<<<<< HEAD
         sys.poly[i].print();
-=======
-//        sys.poly[i].print();
->>>>>>> dd7bdd9539453bfd13460934982e355711d37718
      }
 
      sys.create_particle_list();
@@ -155,13 +145,10 @@ int main(int argc, char* argv[]) {
     return_molecules(M);
 
     cout << "\tWarming steps:" << endl;
-<<<<<<< HEAD
     double acceptance = sys.mc_steps_mol(10000);
     acceptance = sys.mc_steps_pol(10000);
 
     cout << "\Main simulation steps:" << endl;
-=======
->>>>>>> dd7bdd9539453bfd13460934982e355711d37718
     for (int i=0;i<100;i++){
        	double acceptance = sys.mc_steps_mol(10000);
     	cout << "\t\t Step #" << i << "; Energy = " << sys.calc_total_energy() << "; Acceptance = " << acceptance << endl;

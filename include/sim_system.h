@@ -24,10 +24,7 @@ class sim_system
         int create_particle_list();
         double recalc_energy_mol(int );
         double recalc_energy_pol(int , int);
-<<<<<<< HEAD
         double extra_energy_pol();
-=======
->>>>>>> dd7bdd9539453bfd13460934982e355711d37718
         double calc_total_energy();
 
         int mc_step_mol( int );
