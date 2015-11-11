@@ -52,7 +52,7 @@ const double lambda=10.0;
 double k=2.0;
 
 
-
+// number of polymers and molecules
 int N_molecules = 200;
 int N_polymers  = 4;
 int mol_id      = 0;
